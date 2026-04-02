@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.kcp.co.kr/uiteam/font/Pretendard-Regular.subset.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.kcp.co.kr/uiteam/font/Pretendard-Medium.subset.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.kcp.co.kr/uiteam/font/Pretendard-SemiBold.subset.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.kcp.co.kr/uiteam/font/Pretendard-Bold.subset.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+/* RESET */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: rgba(var(--color-gray--rgb), 0.1);
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+input,
+select,
+textarea,
+figure.image,
+figure.table,
+figure.media {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+select,
+textarea {
+  font-family: 'Pretendard', '돋움', Dotum, AppleSDGothicNeo, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body {
+  color: var(--color-dangol-balck0);
+}
+
+input,
+textarea {
+  background-image: linear-gradient(transparent, transparent);
+  border-radius: 0;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+caption,
+legend {
+  font-size: 0;
+  line-height: 0;
+  text-indent: -5000px;
+}
+
+img,
+fieldset,
+iframe {
+  border: 0 none;
+  vertical-align: top;
+}
+
+fieldset {
+  font-size: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+i,
+em,
+address {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
+a[href^='tel'] {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+figure.image img,
+figure.media video {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type='text'],
+textarea {
+  caret-color: #343a40;
+}
+$icre: 0;
+@while $icre < 100 {
+  // $v: calc($icre / $base-font-size);
+  .MT#{$icre} {
+    margin-top: #{$icre}px !important;
+  }
+  .ML#{$icre} {
+    margin-left: #{$icre}px !important;
+  }
+  .MB#{$icre} {
+    margin-bottom: #{$icre}px !important;
+  }
+  .MR#{$icre} {
+    margin-right: #{$icre}px !important;
+  }
+  .PDT#{$icre} {
+    padding-top: #{$icre}px !important;
+  }
+  .PDB#{$icre} {
+    padding-bottom: #{$icre}px !important;
+  }
+  $icre: $icre + 1;
+}

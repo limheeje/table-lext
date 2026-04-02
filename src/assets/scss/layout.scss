@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+#root {
+  min-width: 360px;
+  width: 100%;
+  height: 100vh;
+
+  > .container {
+    min-width: 360px;
+    width: 100%;
+
+    @media (min-width: 430px) {
+      max-width: 430px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+  #toast_wrapping_head,
+  #toast_wrapping_bottom {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  #toast_wrapping_head {
+    top: 0;
+  }
+  #toast_wrapping_bottom {
+    bottom: 0;
+  }
+}
